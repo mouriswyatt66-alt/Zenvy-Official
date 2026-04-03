@@ -16,7 +16,7 @@ if %errorlevel% neq 0 (
 )
 
 echo  [1/3] Installing PyInstaller...
-pip install pyinstaller --quiet
+python -m pip install pyinstaller --quiet
 if %errorlevel% neq 0 (
     echo  ERROR: Failed to install PyInstaller.
     pause
@@ -24,7 +24,7 @@ if %errorlevel% neq 0 (
 )
 
 echo  [2/3] Building EXE from installer folder...
-python -m PyInstaller ZenvyInstaller.spec --clean --noconfirm --distpath "%~dp0dist" --workpath "%~dp0build" --specpath "%~dp0"
+python -m PyInstaller ZenvyInstaller.spec --clean --noconfirm
 if %errorlevel% neq 0 (
     echo  ERROR: PyInstaller build failed. Check output above.
     pause
