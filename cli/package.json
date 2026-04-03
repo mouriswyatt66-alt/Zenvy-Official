@@ -1,0 +1,27 @@
+{
+  "name": "zenvy",
+  "version": "1.0.0",
+  "description": "The open, community-driven package manager. Scripted by Wyatt Mouris.",
+  "main": "zenvy.js",
+  "bin": {
+    "zenvy": "./zenvy.js"
+  },
+  "scripts": {
+    "start": "node zenvy.js",
+    "test": "echo \"No tests configured\""
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "node-fetch": "^2.7.0",
+    "ora": "^5.4.1",
+    "semver": "^7.5.4",
+    "tar": "^6.2.0"
+  },
+  "keywords": ["package-manager", "zenvy", "open-source"],
+  "author": "Wyatt Mouris",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
